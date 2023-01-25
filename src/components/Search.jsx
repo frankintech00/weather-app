@@ -2,8 +2,8 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="flex justify-center">
-      <p>Test</p>
+    <div>
+      <p>Search Update</p>
     </div>
   );
 };

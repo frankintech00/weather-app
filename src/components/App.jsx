@@ -1,5 +1,4 @@
-import { useState } from "react";
-import Search from "./components/search/search";
+import Search from "./Search";
 
 function App() {
   return (
