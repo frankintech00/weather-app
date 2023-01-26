@@ -43,6 +43,8 @@ const Search = ({ onSearchChange }) => {
   // passing the necessary props
   return (
     <AsyncPaginate
+      className="box-shadow-md rounded-md p-5 w-full
+      "
       placeholder="Search for a city..."
       debounceTimeout={600}
       value={search}

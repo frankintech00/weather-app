@@ -7,8 +7,11 @@ function App() {
     console.log(searchData);
   };
   return (
-    <div className="h-screen bg-slate-500 flex justify-center font-inter p-10 bg-background">
-      <div className="w-2/5 min-w-min bg-slate-600 p-5 rounded-md shadow-md opacity-80">
+    <div className="h-screen font-inter bg-background p-5">
+      <div className="w-1/2 bg-cyan-900 rounded-md shadow-md opacity-80 flex flex-wrap align-content-space-between align-items-center justify-content-center flex-col p-5 mx-auto">
+        <h1 className="font-semibold text-6xl text-white text-center p-5">
+          Weather App
+        </h1>
         <Search onSearchChange={handleOnSearchChange} />
         <Weather />
         <Forecast />
