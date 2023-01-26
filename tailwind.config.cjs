@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      backgroundImage: {
+        background: "url('/src/assets/background.jpg')",
+      },
     },
   },
   plugins: [],
