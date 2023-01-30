@@ -2,6 +2,7 @@ import { useState } from "react";
 import Search from "./Search";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import Weather from "./Weather";
+import Forecast from "./Forecast";
 
 function App() {
   const [weather, setWeather] = useState(null);
@@ -33,13 +34,14 @@ function App() {
   };
 
   return (
-    <div className="h-screen font-inter bg-background p-5">
+    <div className=" h-auto font-inter bg-indigo-300 p-5">
       <div className="w-2/5  bg-cyan-900 rounded-md shadow-2xl opacity-80 flex flex-wrap align-content-space-between align-items-center justify-content-center flex-col p-5 mx-auto">
         <h1 className="font-semibold text-6xl text-white text-center p-5">
           Weather App
         </h1>
         <Search onSearchChange={handleOnSearchChange} />
         {weather && <Weather data={weather} />}
+        {forecast && <Forecast data={forecast} />}
       </div>
     </div>
   );
