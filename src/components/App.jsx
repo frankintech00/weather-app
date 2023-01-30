@@ -34,15 +34,13 @@ function App() {
   };
 
   return (
-    <div className=" h-auto font-inter bg-indigo-300 p-5">
-      <div className="w-2/5  bg-cyan-900 rounded-md shadow-2xl opacity-80 flex flex-wrap align-content-space-between align-items-center justify-content-center flex-col p-5 mx-auto">
-        <h1 className="font-semibold text-6xl text-white text-center p-5">
-          Weather App
-        </h1>
-        <Search onSearchChange={handleOnSearchChange} />
-        {weather && <Weather data={weather} />}
-        {forecast && <Forecast data={forecast} />}
-      </div>
+    <div className=" h-full w-3/5 mx-auto font-inter bg-indigo-300 overflow-y p-5">
+      <h1 className="font-semibold text-5xl text-white text-center p-5">
+        Weather App
+      </h1>
+      <Search onSearchChange={handleOnSearchChange} />
+      {weather && <Weather data={weather} />}
+      {forecast && <Forecast data={forecast} />}
     </div>
   );
 }
