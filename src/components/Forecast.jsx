@@ -40,7 +40,7 @@ const Forecast = ({ data }) => {
                 <div className="bg-gray-200 rounded-lg h-11 my-2 cursor-pointer flex items-center font-medium text-sm py-2 px-5">
                   {/* Displays the weather icon */}
                   <img
-                    src={`src/assets/icons/${item.weather[0].icon}.png`}
+                    src={`../src/assets/icons/${item.weather[0].icon}.png`}
                     className="w-11 h-11 cursor-pointer"
                     alt="weather"
                   />
