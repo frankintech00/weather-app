@@ -17,10 +17,11 @@ const Weather = ({ data }) => {
           </p>
         </div>
         {/* Right side container to display weather icon */}
+
         <img
           alt="Weather Icon."
           className="weather-icon"
-          src={`../src/assets/icons/${data.weather[0].icon}.png`}
+          src={`/public/${data.weather[0].icon}.png`}
         />
       </div>
       {/* Lower container to display temperature, feels like, wind, humidity, and pressure information */}
